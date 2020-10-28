@@ -47,7 +47,7 @@ if [ $? == 0 ]; then
         -v $4/data:/installer/data:z \
         -e LICENSE=accept \
         -e ENTITLED_REGISTRY=cp.icr.io -e ENTITLED_REGISTRY_USER=cp -e ENTITLED_REGISTRY_KEY="$1" \
-        -e OPENSHIFT_USERNAME="apikey" -e OPENSHIFT_PASSWORD="$2" -e OPENSHIFT_URL="$OPENSHIFT_URL" "cp.icr.io/cp/icpa/icpa-installer:4.2.1" install
+        -e OPENSHIFT_USERNAME="apikey" -e OPENSHIFT_PASSWORD="$2" -e OPENSHIFT_URL="$OPENSHIFT_URL" "cp.icr.io/cp/icpa/icpa-installer:${CP4APPS_VERSION}" install
 else
     exit 1
 fi
