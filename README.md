@@ -1,4 +1,4 @@
-# docker knative install openshift
+# docker CP4Apps install openshift
 
 ## Scope
 
@@ -10,14 +10,14 @@ Run via a `docker` `ENTRYPOINT` check: <https://phoenixnap.com/kb/docker-cmd-vs-
 
 **EXAMPLE**:
 ```bash
-docker run --entrypoint /scripts/run.sh quay.io/ibm-advocados/openshift-cli-base:4.5 "APIKEY" "CLUSTER"
+docker run --entrypoint /scripts/run.sh quay.io/ibm-advocados/docker-cp4apps:latest "ENTITLED_REGISTRY_KEY" "APIKEY" "CLUSTER" "INSTALLATION_CONFIG_DATA_DIR"
 ```
 
 ## License & Authors
 
 If you would like to see the detailed LICENSE click [here](./LICENSE).
 
-- Author: David Carew <carew@us.ibm.com>
+- Author: Oliver Rodriguez <odrodrig@us.ibm.com>
 - Author: JJ Asghar <awesome@ibm.com>
 
 ```text
