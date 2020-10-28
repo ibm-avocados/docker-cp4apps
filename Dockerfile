@@ -12,3 +12,5 @@ RUN mkdir /scripts
 COPY scripts/run.sh /scripts/run.sh
 
 RUN chmod 755 /scripts/run.sh
+
+ENTRYPOINT ["/scripts/run.sh"]
